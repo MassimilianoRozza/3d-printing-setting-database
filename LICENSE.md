@@ -1,0 +1,5 @@
+# License
+
+This work is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/MIT License Copyright (c) 2024 Massimiliano Rozza The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+This work is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International ](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)<img src="https://chooser-beta.creativecommons.org/img/cc-logo.f0ab4ebe.svg" alt="img" style="zoom:5%;" /><img src="https://chooser-beta.creativecommons.org/img/cc-by.21b728bb.svg" alt="img" style="zoom:5%;" /><img src="https://chooser-beta.creativecommons.org/img/cc-nc.218f18fc.svg" alt="img" style="zoom:5%;" /><img src="https://chooser-beta.creativecommons.org/img/cc-sa.d1572b71.svg" alt="img" style="zoom:5%;" />
