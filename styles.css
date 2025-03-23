@@ -59,7 +59,7 @@ body {
 
 .dark select:focus {
     border-color: #3b82f6;
-    ring-color: rgba(59, 130, 246, 0.5);
+    outline-color: rgba(59, 130, 246, 0.5);
 }
 
 /* Filter heading styles for dark mode */
