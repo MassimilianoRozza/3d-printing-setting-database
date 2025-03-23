@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-surface-light-200 dark:bg-surface-dark-100">
+<body class="bg-surface-light-200 dark:bg-[#282828]">
     <header class="bg-[#c72739] dark:bg-[#d6683f] text-white py-4 text-center rounded-b-md shadow-md">
         <div class="top-controls">
             <div class="dark-mode-toggle">
@@ -19,7 +19,7 @@
                 </label>
                 <span class="dark-mode-label">🌙</span>
             </div>
-            <a href="https://github.com/MassimilianoRozza/3d-printing-setting-database/tree/main" 
+            <a href="https://github.com/MassimilianoRozza/3dsettingsdb/tree/main"
                class="social-link github-link" 
                title="View on GitHub"
                target="_blank"
@@ -39,13 +39,10 @@
             </a>
         </div>
         <h1 class="text-6xl font-semibold">3D Printing Settings Database</h1>
-        <br>
         <p class="text-md">Configurations for Your Prints</p>
     </header>
 
-    <!-- Change mt-6 to mt-4 to reduce top margin -->
     <main class="container mx-auto mt-4 p-4">
-        <!-- Change mb-6 to mb-4 to reduce bottom margin -->
         <div class="bg-surface-light-100 dark:bg-surface-dark-200 rounded-md shadow-md p-4 mb-4">
             <h2 class="text-xl font-semibold text-surface-dark-300 dark:text-surface-light-100 mb-2">Welcome to the 3D Printing Settings Database!</h2>
             <p class="text-surface-dark-400 dark:text-surface-light-200 mb-4">
@@ -90,7 +87,7 @@
                     <option value="">All Materials</option>
                 </select>
             </div>
-             <div class="bg-surface-light-100 dark:bg-surface-dark-200 rounded-md shadow-md p-4">
+            <div class="bg-surface-light-100 dark:bg-surface-dark-200 rounded-md shadow-md p-4">
                 <h2 class="text-lg font-semibold text-surface-dark-300 dark:text-surface-light-100 mb-2">Filter by Manufacturer</h2>
                 <select id="brandFilter" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200 focus:border-blue-300">
                     <option value="">All Manufacturers</option>
@@ -125,8 +122,8 @@
                     </tr>
                 </tbody>
             </table>
-             <div id="noDataMessage" class="text-center text-gray-500 py-4 hidden">
-                  No settings found with the selected filters.
+            <div id="noDataMessage" class="text-center text-gray-500 py-4 hidden">
+                No settings found with the selected filters.
             </div>
         </div>
         

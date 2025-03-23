@@ -26,7 +26,7 @@ A web-based database of 3D printing settings for various materials and printers.
 
 ## Usage
 
-Visit [the site](https://massimilianorozza.github.io/3d-printing-setting-database/) to access the database. Use the filters to find settings for your specific:
+Visit [the site](https://massimilianorozza.github.io/3dsettingsdb/) to access the database. Use the filters to find settings for your specific:
 - Printer model
 - Material type (PLA, PETG, etc.)
 - Manufacturer

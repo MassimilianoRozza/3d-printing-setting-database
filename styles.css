@@ -25,11 +25,12 @@ body {
 
 /* Top controls container */
 .top-controls {
-    position: fixed;
+    position: absolute;
     top: 1rem;
     right: 1rem;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 1.25rem;
 }
 
