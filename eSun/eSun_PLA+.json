@@ -1,23 +1,5 @@
 ﻿[
     {
-        "printer": "",
-        "manufacturer": "",
-        "material": "",
-        "color": "",
-        "diameter_mm": 1.75,
-        "density_g_cm3": 0.00,
-        "nozzle_temp_first_layer_c": 0,
-        "nozzle_temp_c": 0,
-        "bed_type": "",
-        "bed_temp_first_layer_c": 0,
-        "bed_temp_c": 0,
-        "flowrate": 0.00,
-        "pressure_advance": 0.00,
-        "max_mm3_s": 0,
-        "retraction_mm": 0.0,
-        "tested": ""
-   },
-    {
         "printer": "Ender 3 PRO KLIPPER",
         "manufacturer": "eSun",
         "material": "PLA+",

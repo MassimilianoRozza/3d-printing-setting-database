@@ -1,18 +1,11 @@
 {
     "files": [
-        "AtomicFilament/AtomicFilament_ABS.json",
-        "AtomicFilament/AtomicFilament_ASA.json",
-        "AtomicFilament/AtomicFilament_NYLON.json",
-        "AtomicFilament/AtomicFilament_PETG.json",
-        "AtomicFilament/AtomicFilament_PLA.json",
-        "AtomicFilament/AtomicFilament_PLA_HS.json",
-        "AtomicFilament/AtomicFilament_PP.json",
-        "AtomicFilament/AtomicFilament_TPU.json",
-        "AtomicFilament/AtomicFilament_PLA+.json",
-        "SUNLU/SUNLU_PETG.json",
-        "SUNLU/SUNLU_PLA+.json",
-        "SUNLU/SUNLU_PLA_HS.json",
+        "eSun/eSun_PLA+.json",
+        
         "Overture/Overture_PETG.json",
-        "eSun/eSun_PLA%2B.json"
+
+        "SUNLU/SUNLU_PETG.json",
+        "SUNLU/SUNLU_PLA_HS.json",
+        "SUNLU/SUNLU_PLA+.json"
     ]
 }
