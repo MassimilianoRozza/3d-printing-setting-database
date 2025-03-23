@@ -1,5 +1,19 @@
-# License
+Copyright (c) {{ year }} {{ organization }}
 
-This work is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/MIT License Copyright (c) 2024 Massimiliano Rozza The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This work is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International ](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)<img src="https://chooser-beta.creativecommons.org/img/cc-logo.f0ab4ebe.svg" alt="img" style="zoom:5%;" /><img src="https://chooser-beta.creativecommons.org/img/cc-by.21b728bb.svg" alt="img" style="zoom:5%;" /><img src="https://chooser-beta.creativecommons.org/img/cc-nc.218f18fc.svg" alt="img" style="zoom:5%;" /><img src="https://chooser-beta.creativecommons.org/img/cc-sa.d1572b71.svg" alt="img" style="zoom:5%;" />
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
