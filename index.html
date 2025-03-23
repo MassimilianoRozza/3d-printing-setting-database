@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,77 +8,97 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white py-4 text-center rounded-b-md shadow-md">
-        <div class="dark-mode-toggle">
-            <label class="toggle-switch">
-                <input type="checkbox" id="darkModeToggle">
-                <span class="slider"></span>
-            </label>
+<body class="bg-surface-light-200 dark:bg-surface-dark-100">
+    <header class="bg-[#c72739] dark:bg-[#d6683f] text-white py-4 text-center rounded-b-md shadow-md">
+        <div class="top-controls">
+            <div class="dark-mode-toggle">
+                <span class="dark-mode-label">🌞</span>
+                <label class="toggle-switch" title="Toggle dark mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="dark-mode-label">🌙</span>
+            </div>
+            <a href="https://github.com/MassimilianoRozza/3d-printing-setting-database/tree/main" 
+               class="social-link github-link" 
+               title="View on GitHub"
+               target="_blank"
+               rel="noopener noreferrer">
+                <svg height="32" viewBox="0 0 16 16" width="32" class="github-icon">
+                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/print3rmax/" 
+               class="social-link instagram-link" 
+               title="Follow on Instagram"
+               target="_blank"
+               rel="noopener noreferrer">
+                <svg height="32" viewBox="0 0 24 24" width="32">
+                    <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
         </div>
-        <h1 class="text-2xl font-semibold">3D Printing Settings Database</h1>
+        <h1 class="text-6xl font-semibold">3D Printing Settings Database</h1>
+        <br>
         <p class="text-md">Configurations for Your Prints</p>
     </header>
 
-    <main class="container mx-auto mt-6 p-4">
-        <div class="bg-white rounded-md shadow-md p-4 mb-6">
-            <h2 class="text-xl font-semibold text-gray-800 mb-2">Welcome to the 3D Printing Settings Database!</h2>
-            <p class="text-gray-700 mb-4">
+    <!-- Change mt-6 to mt-4 to reduce top margin -->
+    <main class="container mx-auto mt-4 p-4">
+        <!-- Change mb-6 to mb-4 to reduce bottom margin -->
+        <div class="bg-surface-light-100 dark:bg-surface-dark-200 rounded-md shadow-md p-4 mb-4">
+            <h2 class="text-xl font-semibold text-surface-dark-300 dark:text-surface-light-100 mb-2">Welcome to the 3D Printing Settings Database!</h2>
+            <p class="text-surface-dark-400 dark:text-surface-light-200 mb-4">
                 This site is a resource created to help 3D printing enthusiasts find the best settings for their printers.
                 The goal is to provide an easily searchable and expandable database containing detailed information on print configurations
                 for various materials (such as PLA, PETG, etc.) and different 3D printers.
             </p>
-            <div class="mb-4">
-                <h3 class="text-lg font-semibold text-gray-800">My personal collection of settings for my filaments.</h3>
-            </div>
 
-            <div class="mt-4 pt-4 border-t border-gray-200">
-                <h3 class="text-lg font-semibold text-gray-800">Warnings</h3>
-                <div class="mb-4">
-                    <h4 class="text-md font-semibold text-gray-800"></h4>
-                    <p class="text-gray-700">
-                        These settings are due to my needs and my printer, please note that I provide these presets as-is, without any warranty, expressed or implied. Use them at your own risk.
-                    </p>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-primary-light-100 dark:text-primary-dark-100 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    Warning
+                </h3>
+                <div class="mb-4 mt-2 bg-tonal-light-100 dark:bg-tonal-dark-200 border-l-4 border-primary-light-300 dark:border-primary-dark-300 p-4">
+                    <div class="flex">
+                        <div class="ml-3">
+                            <p class="text-primary-light-100 dark:text-primary-dark-300">
+                                These settings are due to my needs and my printer, please note that I provide these presets as-is, without any warranty, expressed or implied. Use them at your own risk.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
-            <p class="text-gray-700">
-                Browse through the filters to find the settings for your printer and material.
-                Select the printer brand, material, and manufacturer to view a table with the recommended parameters.
-                The data is organized clearly, including information on nozzle and bed temperature, flow rate, and more.
-                <br><br>
+
+            <p class="text-surface-dark-400 dark:text-surface-light-200 mb-4">
                 We hope you find this site helpful in achieving high-quality 3D prints!
             </p>
-            <div class="mt-6 pt-6 border-t border-gray-200">
-                <h2 class="text-xl font-semibold text-gray-800 mb-2">Contribute</h2>
-                <p class="text-gray-700">
-                    We welcome contributions from the community to make this database even more comprehensive! If you have tested settings that work well for your printer and materials, please consider sharing them. You can contribute by submitting a pull request to the repository.
-                </p>
-            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-            <div class="bg-white rounded-md shadow-md p-4">
-                <h2 class="text-lg font-semibold text-gray-800 mb-2">Filter by Printer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            <div class="bg-surface-light-100 dark:bg-surface-dark-200 rounded-md shadow-md p-4">
+                <h2 class="text-lg font-semibold text-surface-dark-300 dark:text-surface-light-100 mb-2">Filter by Printer</h2>
                 <select id="printerFilter" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200 focus:border-blue-300">
                     <option value="">All Printers</option>
                 </select>
             </div>
-            <div class="bg-white rounded-md shadow-md p-4">
-                <h2 class="text-lg font-semibold text-gray-800 mb-2">Filter by Material</h2>
+            <div class="bg-surface-light-100 dark:bg-surface-dark-200 rounded-md shadow-md p-4">
+                <h2 class="text-lg font-semibold text-surface-dark-300 dark:text-surface-light-100 mb-2">Filter by Material</h2>
                 <select id="materialFilter" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200 focus:border-blue-300">
                     <option value="">All Materials</option>
                 </select>
             </div>
-             <div class="bg-white rounded-md shadow-md p-4">
-                <h2 class="text-lg font-semibold text-gray-800 mb-2">Filter by Manufacturer</h2>
+             <div class="bg-surface-light-100 dark:bg-surface-dark-200 rounded-md shadow-md p-4">
+                <h2 class="text-lg font-semibold text-surface-dark-300 dark:text-surface-light-100 mb-2">Filter by Manufacturer</h2>
                 <select id="brandFilter" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200 focus:border-blue-300">
                     <option value="">All Manufacturers</option>
                 </select>
             </div>
         </div>
 
-        <div class="bg-white rounded-md shadow-md p-4 overflow-x-auto">
+        <div class="bg-surface-light-100 dark:bg-surface-dark-200 rounded-md shadow-md p-4 overflow-x-auto mb-8">
             <table id="settingsTable" class="min-w-full table-auto rounded-md hidden">
                 <thead class="bg-gray-200">
                     <tr>
@@ -109,9 +129,15 @@
                   No settings found with the selected filters.
             </div>
         </div>
+        
+        <div class="bg-surface-light-100 dark:bg-surface-dark-200 rounded-md shadow-md p-4">
+            <h2 class="text-xl font-semibold text-surface-dark-300 dark:text-surface-light-100 mb-2">Contribute</h2>
+            <p class="text-surface-dark-400 dark:text-surface-light-200 mb-4">
+                We welcome contributions from the community to make this database even more comprehensive! If you have tested settings that work well for your printer and materials, please consider sharing them. You can contribute by submitting a pull request to the repository.
+            </p>
+        </div>
     </main>
-
-    <footer class="bg-gray-800 text-white py-4 text-center rounded-t-md mt-8 shadow-md">
+    <footer class="bg-surface-dark-200 dark:bg-surface-dark-100 text-white py-4 text-center rounded-t-md mt-8 shadow-md">
         <p>© 2024 3D Printing Settings Database. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>

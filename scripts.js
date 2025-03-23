@@ -8,7 +8,11 @@ const darkModeToggle = document.getElementById('darkModeToggle');
 
 // Dark mode initialization
 function initDarkMode() {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    // Set dark mode as default if no preference is stored
+    const isDarkMode = localStorage.getItem('darkMode') !== null 
+        ? localStorage.getItem('darkMode') === 'true'
+        : true;
+    
     document.documentElement.classList.toggle('dark', isDarkMode);
     darkModeToggle.checked = isDarkMode;
 }

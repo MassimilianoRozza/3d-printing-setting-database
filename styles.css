@@ -23,6 +23,16 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Top controls container */
+.top-controls {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
 /* Dark mode specific styles */
 .dark header {
     background-color: #1e40af;
@@ -56,21 +66,79 @@ body {
     color: var(--text-primary);
 }
 
-/* Dark mode toggle styles */
+/* Update existing dark-mode-toggle */
 .dark-mode-toggle {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
+    position: static;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
+.dark-mode-label {
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+/* GitHub link styles */
+.github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: opacity 0.2s;
+}
+
+.github-link:hover {
+    opacity: 0.8;
+}
+
+.github-icon {
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+/* Dark mode specific styles */
+.dark .github-link {
+    color: var(--text-primary);
+}
+
+/* Social links styles */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: opacity 0.2s;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+.social-link svg {
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+/* Dark mode specific styles */
+.dark .social-link {
+    color: var(--text-primary);
+}
+
+/* Instagram-specific styles */
+.instagram-link svg {
+    padding: 4px;
+}
+
+/* Update existing toggle switch styles */
 .toggle-switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    cursor: pointer;
+}
+
+.toggle-switch:hover {
+    opacity: 0.8;
 }
 
 .toggle-switch input {
@@ -162,4 +230,17 @@ table thead th {
 /* Indent sub-items */
 #materialFilter option:not([value^="group_"]) {
     padding-left: 1.5rem;
+}
+
+/* Warning styles */
+.dark .bg-yellow-50 {
+    background-color: rgba(39, 37, 9, 0);
+}
+
+.dark .text-yellow-700 {
+    color: rgb(253, 224, 71);
+}
+
+.dark .border-yellow-400 {
+    border-color: rgb(250, 204, 21);
 }
