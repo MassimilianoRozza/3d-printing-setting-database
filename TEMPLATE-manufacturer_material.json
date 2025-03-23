@@ -15,6 +15,6 @@
         "pressure_advance": 0.00,
         "max_mm3_s": 0,
         "retraction_mm": 0.0,
-        "tested": "✅❌"
+        "tested": "✅⚠️🔄❌"
     }
 ]
