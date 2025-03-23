@@ -1,0 +1,17 @@
+[
+    {
+        "printer": "K1C",
+        "manufacturer": "SUNLU",
+        "material": "PETG",
+        "color": "Arancione",
+        "diameter_mm": 1.75,
+        "nozzle_temp_c": 260,
+        "bed_type": "PEI liscia",
+        "bed_temp_c": 70,
+        "flowrate": 1.0032,
+        "pressure_advance": 0.1155,
+        "max_mm3_s": 9,
+        "retraction_mm": 0.2,
+        "tested": "✅"
+    }
+]

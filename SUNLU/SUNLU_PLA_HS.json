@@ -1,0 +1,19 @@
+[
+    {
+        "printer": "K1C",
+        "manufacturer": "SUNLU",
+        "material": "PLA HS",
+        "color": "White",
+        "diameter_mm": 1.75,
+        "nozzle_temp_first_layer_c": 220,
+        "nozzle_temp_c": 220,
+        "bed_type": "smooth PEI",
+        "bed_temp_first_layer_c": 60,
+        "bed_temp_c": 55,
+        "flowrate": 0.98,
+        "pressure_advance": 0.04,
+        "max_mm3_s": 23,
+        "retraction_mm": 0.6,
+        "tested": "✅"
+    }
+]

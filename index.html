@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printing Settings Database</title>
+    <link rel="icon" type="image/png" href="Print3r Max.png">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-4 text-center rounded-b-md shadow-md">
+        <div class="dark-mode-toggle">
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <h1 class="text-2xl font-semibold">3D Printing Settings Database</h1>
+        <p class="text-md">Configurations for Your Prints</p>
+    </header>
+
+    <main class="container mx-auto mt-6 p-4">
+        <div class="bg-white rounded-md shadow-md p-4 mb-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">Welcome to the 3D Printing Settings Database!</h2>
+            <p class="text-gray-700 mb-4">
+                This site is a resource created to help 3D printing enthusiasts find the best settings for their printers.
+                The goal is to provide an easily searchable and expandable database containing detailed information on print configurations
+                for various materials (such as PLA, PETG, etc.) and different 3D printers.
+            </p>
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">My personal collection of settings for my filaments.</h3>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-gray-200">
+                <h3 class="text-lg font-semibold text-gray-800">Warnings</h3>
+                <div class="mb-4">
+                    <h4 class="text-md font-semibold text-gray-800"></h4>
+                    <p class="text-gray-700">
+                        These settings are due to my needs and my printer, please note that I provide these presets as-is, without any warranty, expressed or implied. Use them at your own risk.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <p class="text-gray-700">
+                Browse through the filters to find the settings for your printer and material.
+                Select the printer brand, material, and manufacturer to view a table with the recommended parameters.
+                The data is organized clearly, including information on nozzle and bed temperature, flow rate, and more.
+                <br><br>
+                We hope you find this site helpful in achieving high-quality 3D prints!
+            </p>
+            <div class="mt-6 pt-6 border-t border-gray-200">
+                <h2 class="text-xl font-semibold text-gray-800 mb-2">Contribute</h2>
+                <p class="text-gray-700">
+                    We welcome contributions from the community to make this database even more comprehensive! If you have tested settings that work well for your printer and materials, please consider sharing them. You can contribute by submitting a pull request to the repository.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white rounded-md shadow-md p-4">
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Filter by Printer</h2>
+                <select id="printerFilter" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200 focus:border-blue-300">
+                    <option value="">All Printers</option>
+                </select>
+            </div>
+            <div class="bg-white rounded-md shadow-md p-4">
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Filter by Material</h2>
+                <select id="materialFilter" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200 focus:border-blue-300">
+                    <option value="">All Materials</option>
+                </select>
+            </div>
+             <div class="bg-white rounded-md shadow-md p-4">
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Filter by Manufacturer</h2>
+                <select id="brandFilter" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200 focus:border-blue-300">
+                    <option value="">All Manufacturers</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-md shadow-md p-4 overflow-x-auto">
+            <table id="settingsTable" class="min-w-full table-auto rounded-md hidden">
+                <thead class="bg-gray-200">
+                    <tr>
+                        <th class="px-4 py-2 text-left">Printer</th>
+                        <th class="px-4 py-2 text-left">Manufacturer</th>
+                        <th class="px-4 py-2 text-left">Material</th>
+                        <th class="px-4 py-2 text-left">Color</th>
+                        <th class="px-4 py-2 text-left">Diameter (mm)</th>
+                        <th class="px-4 py-2 text-left">Nozzle 1st Layer (°C)</th>
+                        <th class="px-4 py-2 text-left">Nozzle Temp (°C)</th>
+                        <th class="px-4 py-2 text-left">Bed Type</th>
+                        <th class="px-4 py-2 text-left">Bed 1st Layer (°C)</th>
+                        <th class="px-4 py-2 text-left">Bed Temp (°C)</th>
+                        <th class="px-4 py-2 text-left">Flowrate</th>
+                        <th class="px-4 py-2 text-left">Pressure Advance</th>
+                        <th class="px-4 py-2 text-left">Max mm³/s</th>
+                        <th class="px-4 py-2 text-left">Retraction (mm)</th>
+                        <th class="px-4 py-2 text-left">Tested</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-700">
+                    <tr>
+                        <td colspan="15" class="px-4 py-2 text-center text-gray-500">Loading data...</td>
+                    </tr>
+                </tbody>
+            </table>
+             <div id="noDataMessage" class="text-center text-gray-500 py-4 hidden">
+                  No settings found with the selected filters.
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 text-center rounded-t-md mt-8 shadow-md">
+        <p>© 2024 3D Printing Settings Database. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

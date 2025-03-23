@@ -1,0 +1,20 @@
+[
+    {
+        "printer": "K1C",
+        "manufacturer": "Overture",
+        "material": "PETG",
+        "color": "Black",
+        "diameter_mm": 1.75,
+        "density_g_cm3": 1.27,
+        "nozzle_temp_first_layer_c": 245,
+        "nozzle_temp_c": 240,
+        "bed_type": "PEI liscia",
+        "bed_temp_first_layer_c": 75,
+        "bed_temp_c": 70,
+        "flowrate": 0.95,
+        "pressure_advance": 0.02,
+        "max_mm3_s": 9,
+        "retraction_mm": 0.6,
+        "tested": "✅"
+    }
+]

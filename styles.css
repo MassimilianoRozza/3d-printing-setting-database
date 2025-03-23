@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --border-color: #e5e7eb;
+}
+
+.dark {
+    --bg-primary: #1f2937;
+    --bg-secondary: #111827;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --border-color: #374151;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode specific styles */
+.dark header {
+    background-color: #1e40af;
+}
+
+.dark .bg-white {
+    background-color: var(--bg-primary);
+}
+
+.dark .text-gray-700 {
+    color: var(--text-secondary);
+}
+
+.dark .hover\:bg-gray-50:hover {
+    background-color: var(--bg-secondary);
+}
+
+.dark select {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.dark select:focus {
+    border-color: #3b82f6;
+    ring-color: rgba(59, 130, 246, 0.5);
+}
+
+/* Filter heading styles for dark mode */
+.dark .text-gray-800 {
+    color: var(--text-primary);
+}
+
+/* Dark mode toggle styles */
+.dark-mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Table styles for dark mode */
+.dark table thead {
+    background-color: var(--bg-secondary);
+}
+
+.dark table thead th {
+    color: var(--text-primary);
+}
+
+.dark table tbody tr:hover {
+    background-color: var(--bg-secondary);
+}
+
+.dark table tbody td {
+    border-color: var(--border-color);
+}
+
+/* Update the existing table styles */
+table thead {
+    background-color: #e5e7eb;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table thead th {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+/* Material filter styles */
+#materialFilter optgroup {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.dark #materialFilter optgroup {
+    background-color: var(--bg-secondary);
+}
+
+#materialFilter option {
+    font-weight: normal;
+    padding-left: 1rem;
+}
+
+#materialFilter option[value^="group_"] {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Indent sub-items */
+#materialFilter option:not([value^="group_"]) {
+    padding-left: 1.5rem;
+}
