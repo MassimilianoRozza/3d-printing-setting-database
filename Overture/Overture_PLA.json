@@ -16,5 +16,23 @@
         "max_mm3_s": 0,
         "retraction_mm": 0.0,
         "tested": ""
+    },
+    {
+        "printer": "K1C",
+        "manufacturer": "Overture",
+        "material": "PLA",
+        "color": "green",
+        "diameter_mm": 1.75,
+        "density_g_cm3": 1.25,
+        "nozzle_temp_first_layer_c": 215,
+        "nozzle_temp_c": 210,
+        "bed_type": "smooth",
+        "bed_temp_first_layer_c": 60,
+        "bed_temp_c": 55,
+        "flowrate": 0.98,
+        "pressure_advance": 0.00,
+        "max_mm3_s": 12,
+        "retraction_mm": 0.6,
+        "tested": "✅️"
     }
 ]
